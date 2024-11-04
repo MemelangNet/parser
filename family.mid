@@ -1,0 +1,150 @@
+10000 male
+10002 female
+10004 ancestor
+10006 parent
+10008 mother
+10010 father
+10012 son
+10014 daughter
+10016 stepparent
+10018 steppmother
+10020 stepfather
+10022 grandparent
+10024 grandmother
+10026 grandfather
+10028 maternalgrandmother
+10030 maternalgrandfather
+10032 paternalgrandmother
+10034 paternalgrandfather
+10036 grandson
+10038 granddaughter
+10040 greatgrandparent
+10042 greatgrandmother
+10044 greatgrandfather
+10046 greatgrandson
+10048 greatgrandson
+10050 greatgranddaughter
+10052 greatgreatgrandparent
+10054 greatgreatgreatgrandparent
+10056 greatgranddaughter
+10058 sibling
+10060 halfsibling
+10062 sister
+10064 brother
+10066 maternalsibling
+10068 pibling // gender-neutral aunt/uncle
+10070 uncle
+10072 aunt
+10074 niece
+10076 nephew
+10078 paternalsibling
+10080 paternalsister
+10082 paternalbrother
+10084 maternalsister
+10086 maternalbrother
+10088 wife
+10090 exspouse
+10092 exwife
+10094 exhusband
+10096 spouse
+10098 husband
+
+110000 male is reflexive
+110001 female is reflexive
+110002 ancestor is rel
+110003 .ancestor == .ancestor.ancestor
+110004 parent is rel
+110005 .parent == .sibling.parent
+110006 .parent => .ancestor
+110007 mother is rel
+110008 .mother == .parent.female
+110009 father is rel
+110010 .father == .parent.male
+110011 son is rel
+110012 .son = 'parent.male
+110013 daughter is rel
+110014 .daughter = 'parent.female
+110015 stepparent is rel
+110016 .parent.spouse &! .parent => .stepparent
+110017 steppmother is rel
+110018 .steppmother = .stepparent.female
+110019 stepfather is rel
+110020 .stepfather = .stepparent.male
+110021 grandparent is rel
+110022 .grandparent == .parent.parent
+110023 grandmother is rel
+110024 .grandmother == .grandparent.female
+110025 grandfather is rel
+110026 .grandmother == .grandparent.male
+110027 maternalgrandmother is rel
+110028 .maternalgrandmother == .mother.mother
+110029 maternalgrandfather is rel
+110030 .maternalgrandfather == .mother.father
+110031 paternalgrandmother is rel
+110032 .paternalgrandmother == .father.mother
+110033 paternalgrandfather is rel
+110034 .paternalgrandfather == .father.father
+110035 grandson is rel
+110036 .grandson = 'grandparent.male
+110037 granddaughter is rel
+110038 .granddaughter = 'grandparent.female
+110039 greatgrandparent is rel
+110040 .greatgrandparent == .grandparent.parent
+110041 greatgrandmother is rel
+110042 .greatgrandmother == .greatgrandparent.female
+110043 greatgrandfather is rel
+110044 .greatgrandfather == .greatgrandparent.male
+110045 greatgrandson is rel
+110046 .greatgrandson = 'greatgrandparent.male
+110047 greatgranddaughter is rel
+110048 .greatgranddaughter = 'greatgrandparent.female
+110049 greatgrandson is rel
+110050 .greatgrandson = 'greatgrandparent.male
+110051 greatgranddaughter is rel
+110052 .greatgranddaughter = 'greatgrandparent.female
+110053 greatgreatgrandparent is rel
+110054 .greatgreatgrandparent == .greatgrandparent.parent
+110055 greatgreatgreatgrandparent is rel
+110056 .greatgreatgreatgrandparent == .greatgreatgrandparent.parent
+110057 sibling is reciprocal
+110058 .sibling == .parent'parent
+110059 halfsibling is rel
+110060 sister is rel
+110061 .sister == .sibling.female
+110062 brother is rel
+110063 .brother == .sibling.male
+110064 maternalsibling is rel
+110065 .maternalsibling == .mother'mother
+110066 .maternalsibling => .halfsibling
+110067 paternalsibling is rel
+110068 .paternalsibling == .father'father
+110069 .maternalsibling => .halfsibling
+110070 maternalbrother is rel
+110071 .maternalbrother == .maternalsibling.male
+110072 maternalsister is rel
+110073 .maternalsister == .maternalsibling.female
+110074 paternalbrother is rel
+110075 .paternalbrother == .paternalsibling.male
+110076 paternalsister is rel
+110077 .paternalsister == .paternalsibling.female
+110078 pibling is rel
+110079 .pibling == .parent.sibling
+110080 uncle is rel
+110081 .uncle == .pibling.male
+110082 aunt is rel
+110083 .aunt == .pibling.female
+110084 niece is rel
+110085 .niece == 'pibling.female
+110086 nephew is rel
+110087 .nephew == 'pibling.male
+110088 spouse is reciprocal
+110089 husband is rel
+110090 .husband == .spouse.male
+110091 wife is rel
+110092 .wife == .spouse.female
+110093 exspouse is reciprocal
+110094 exwife is rel
+110095 .exwife == .exspouse.female
+110096 exhusband is rel
+110097 .exhusband == .exspouse.male
+

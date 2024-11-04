@@ -1,0 +1,75 @@
+0 0
+1 1
+2 .
+3 '
+4 :
+5 =
+6 ;
+7 ==
+8 =>
+9 !=
+10 !
+11 &
+12 &!
+13 |
+14 ||
+15 !==
+16 >
+17 >=
+18 <
+19 <=
+
+20 +
+21 -
+22 *
+23 /
+24 ^
+25 %
+26 #
+
+30 +=
+31 -=
+32 *=
+33 /=
+34 ^=
+35 %=
+36 #=
+
+100 id
+102 is
+104 ar
+106 br
+108 eq
+110 rel
+112 reflexive
+114 recursive
+116 reciprocal
+
+120 great
+121 less
+122 greateq
+123 lesseq
+124 inc
+125 dec
+
+100000 rel is rel
+100001 id is rel
+100002 is is rel
+100003 ar is rel
+100004 br is rel
+100005 great is rel
+100006 greateq is rel
+100007 inc is rel
+100008 .reflexive => .rel
+100009 .recursive => .rel
+100010 .reciprocal => .rel
+100011 rel is reflexive
+100012 reflexive is reflexive
+100013 reciprocal is reflexive
+100014 recursive is reflexive
+100015 eq is reciprocal
+100016 eq is recursive
+100017 .great => .greateq
+100018 .eq => .greateq
+100019 .inc => .great
+100020 'inc => 'great
